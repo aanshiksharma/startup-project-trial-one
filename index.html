@@ -7,21 +7,22 @@
     <title>Anshika Website</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
     <header>
         <section class="header">
+            <button class="hamburger" id="hamburger" onclick="toggleNavbar()">
+                <div class="hamburger-icon"></div>
+                <div class="hamburger-icon"></div>
+                <div class="hamburger-icon"></div>
+            </button>
+
+            <div class="logo">Logo</div>
+
             <nav class="navbar font1">
                 <ul>
-                    <li>
-                        <button class="hamburger" onclick="menu()">
-                            <div class="hamburger-icon"></div>
-                            <div class="hamburger-icon"></div>
-                            <div class="hamburger-icon"></div>
-                        </button>
-                    </li>
-                    <li class="logo">Logo</li>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#products">Products</a></li>
                     <li><a href="#about">About Us</a></li>
@@ -43,8 +44,25 @@
     </header>
 
     <main>
-        <section class="intro">
-            <h1 class="font1">NAME OF THE BRAND/COMPANY</h1>
+        <aside class="sidebar" id="side-bar">
+            <button class="exit">
+                <div class="exit-icon bar1"></div>
+                <div class="exit-icon bar2"></div>
+            </button>
+            <h2 class="font1">NAME OF THE BRAND / COMPANY</h2>
+            <nav class="font1">
+                <ul class="flex-col">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="">Login</a></li>
+                    <button class="btn" id="signup">Signup</button>
+                </ul>
+            </nav>
+        </aside>
+        <section class="intro" id="home">
+            <h1 class="font1">NAME OF THE BRAND / COMPANY</h1>
             <p>Description about the Brand/Company.</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis magnam facere modi quas cupiditate id
                 nobis dolorem harum nisi nostrum perspiciatis est corporis velit numquam vel, quam non a error.
@@ -273,6 +291,7 @@
 
         <section class="about" id="about">
             <h2>About Us</h2>
+            <hr>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum id aut blanditiis sunt iste voluptate atque
                 obcaecati omnis, voluptatum esse!</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime odit cumque at amet ipsam aspernatur

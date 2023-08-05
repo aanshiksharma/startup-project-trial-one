@@ -21,6 +21,14 @@
     --blur-background-color-hover: rgba(255, 255, 255, 0.1);
 }
 
+body {
+    background: var(--primary-color);
+}
+
+main {
+    box-shadow: 0 0 20px #000;
+}
+
 input:focus {
     outline: 2px solid var(--primary-color);
 }
@@ -57,7 +65,8 @@ header::after {
     justify-content: space-between;
     align-items: center;
     backdrop-filter: blur(50px);
-
+    max-width: 1440px;
+    margin: auto;
 }
 
 /* Hamburger Menu Icon */
@@ -66,6 +75,7 @@ header::after {
     border: none;
     cursor: pointer;
     display: none;
+    margin-right: 10px;
 }
 
 .hamburger-icon {
@@ -85,10 +95,10 @@ header::after {
 }
 
 .navbar a {
-    padding: 20px;
+    padding: 15px;
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .navbar li:hover {
@@ -96,10 +106,74 @@ header::after {
     transition: 140ms ease-out;
 }
 
+
+/* Sidebar that we can see after pressing the hamburger icon. */
+.sidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100%;
+    background: var(--primary-color);
+    z-index: 5;
+}
+
+.exit {
+    margin: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.exit-icon {
+    height: 2px;
+    width: 14px;
+    background: white;
+}
+
+.bar1{transform: rotateZ(45deg);}
+.bar2{transform: rotateZ(-45deg);}
+
+.sidebar h2 {
+    margin: 10px 0;
+    font-size: 34px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.sidebar ul {
+    margin: 10px 0;
+}
+
+.sidebar li {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.sidebar button {
+    margin: 10px 40px;
+}
+
+
+/* Logo */
+.logo {
+    margin: 0 10px;
+}
+
+
 /* Search Bar */
 .searchbar input {
+    margin: 15px 0;
     padding: 8px 10px;
-    width: 300px;
+    min-width: 210px;
     font-size: 14px;
     border-radius: 2px;
     border: none;
@@ -140,16 +214,19 @@ header::after {
 
 
 /* Footer */
-footer{
+footer {
     background: var(--footer-color);
+    max-width: 1440px;
+    margin: auto;
+    box-shadow: 0 0 20px black;
 }
 
-footer a{
+footer a {
     color: white;
     text-decoration: none;
 }
 
-footer a:hover{
+footer a:hover {
     color: rgba(255, 255, 255, 0.8);
 }
 

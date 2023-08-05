@@ -1,0 +1,32 @@
+@media screen and (max-width: 1000px){
+    /* Hamburger Icon and Navbar Properties Change. */
+    .hamburger {display: block;}
+
+    .login ,
+    .navbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .header {
+        padding: 0 10px;
+    }
+
+    .searchbar .btn{
+        display: none;
+    }
+
+    .intro {
+        padding: 20px;
+    }
+
+    .intro h1 {
+        margin: 50px 20px;
+        font-size: 38px;
+    }
+
+    .about {
+        padding: 50px 20px;
+    }
+}
