@@ -1,0 +1,341 @@
+:root {
+    --neon-purple: #bc13fe;
+    --neon-pink: #ff1493;
+    --neon-blue: #1f51ff;
+    --neon-red: #ff3131;
+    --neon-green: #39ff14;
+}
+
+
+/* Main Tag */
+main {
+    background: var(--primary-color);
+}
+
+
+/* Intro Section */
+.intro {
+    padding: 50px 100px;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 1;
+}
+
+.intro::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('/images/home.jpeg') no-repeat;
+    background-size: cover;
+    background-position: top;
+    z-index: -1;
+}
+
+.intro h1 {
+    margin: 50px;
+    font-size: 60px;
+}
+
+/* About Section */
+.about {
+    padding: 20px 100px;
+    line-height: 200%;
+    background: var(--secondary-color);
+    color: black;
+}
+
+
+
+/* Product Section */
+/* Product Grid */
+.products {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+
+/* Product Cards */
+.product-card {
+    position: relative;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #000000;
+    overflow: hidden;
+    width: max-content;
+    transition: 0.15s ease-out;
+}
+
+.product-card:hover {
+    transform: scale(1.02);
+}
+
+/* Image of the Product */
+.product-image {
+    width: 350px;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 6px black;
+}
+
+.product-image img {
+    width: 350px;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+/* Price Tag that goes on the Top-Right side of the image */
+.price-tag {
+    padding: 10px 4px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+/* Description of the Product */
+.product-description {
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.product-description-right {
+    font-size: 12px;
+}
+
+.product-description-left p,
+.specs ul {
+    margin-top: 6px;
+}
+
+/* Line in the Center of the Cards */
+.center-line {
+    width: 2px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+/* Ratings */
+.ratings img {
+    width: 16px;
+}
+
+/* CTA Button on Product Cards */
+.button {
+    margin: 10px;
+}
+
+.cta-button {
+    width: 100%;
+    margin: 3px 0;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    transform: scale(1.02);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Section */
+.contact {
+    padding: 30px 40px;
+}
+
+
+
+.contact-container {
+    background: var(--primary-color);
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+    padding: 30px;
+    box-shadow: 0 0 10px black;
+
+}
+
+.form-container {
+    margin: 10px;
+    padding: 30px;
+    width: 30%;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    background: var(--primary-color);
+    box-shadow: 0 0 10px black;
+}
+
+/* 
+.form-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(50% + 5px);
+    height: calc(100% + 10px);
+    margin: -5px -2.5px;
+    background: var(--neon-blue);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: -3;
+}
+
+.form-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: calc(50% + 5px);
+    height: calc(100% + 10px);
+    margin: -5px 2.5px;
+    background:var(--neon-pink);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: -5;
+} */
+
+.form-container textarea,
+.form-container input {
+    background: var(--blur-background-color);
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid white;
+    margin: 2px 0;
+    backdrop-filter: blur(20px);
+    font-size: 16px;
+    width: 100%;
+}
+
+::placeholder {
+    color: white;
+}
+
+.buttons input[type="reset"] {
+    background-color: rgb(179, 40, 40);
+    padding: 4px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 6px;
+    width: 30%;
+}
+
+.buttons input[type="reset"]:hover {
+    background-color: rgb(154, 40, 40);
+}
+
+.buttons input[type="submit"] {
+    background-color: rgb(29, 146, 29);
+    padding: 4px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 6px;
+    width: 30%;
+}
+
+.buttons input[type="submit"]:hover {
+    background-color: rgb(29, 131, 29);
+}
+
+
+
+.buttons input[type="reset"]:active {
+    background-color: rgb(154, 40, 40);
+    transform: scale(0.95);
+}
+
+.buttons input[type="submit"]:active {
+    background-color: rgb(29, 131, 29);
+    transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+
+
+/* Product Card Color Classes */
+/* Number 1 */
+.product-card-color-1 .product-image img {
+    filter: drop-shadow(0 0 50px var(--neon-purple));
+}
+
+.product-card-color-1 .price-tag,
+.product-card-color-1 .center-line,
+.product-card-color-1 .cta-button {
+    background-color: var(--neon-purple);
+}
+
+
+/* Number 2 */
+.product-card-color-2 .product-image img {
+    filter: drop-shadow(0 0 50px var(--neon-blue));
+}
+
+.product-card-color-2 .price-tag,
+.product-card-color-2 .center-line,
+.product-card-color-2 .cta-button {
+    background-color: var(--neon-blue);
+}
+
+
+
+/* Number 3 */
+.product-card-color-3 .product-image img {
+    filter: drop-shadow(0 0 50px var(--neon-pink));
+}
+
+.product-card-color-3 .price-tag,
+.product-card-color-3 .center-line,
+.product-card-color-3 .cta-button {
+    background-color: var(--neon-pink);
+}
+
+
+/* Number 4 */
+.product-card-color-4 .product-image img {
+    filter: drop-shadow(0 0 50px var(--neon-red));
+}
+
+.product-card-color-4 .price-tag,
+.product-card-color-4 .center-line,
+.product-card-color-4 .cta-button {
+    background-color: var(--neon-red);
+}
+
+
+/* Number 5 */
+.product-card-color-5 .product-image img {
+    filter: drop-shadow(0 0 50px var(--neon-green));
+}
+
+.product-card-color-5 .price-tag,
+.product-card-color-5 .center-line,
+.product-card-color-5 .cta-button {
+    background-color: var(--neon-green);
+}

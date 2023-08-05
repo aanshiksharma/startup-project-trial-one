@@ -1,0 +1,19 @@
+
+
+
+let finalRating = document.getElementById('numeric-rating');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
