@@ -166,19 +166,8 @@ main {
     padding: 30px;
 }
 
-
-
-.contact-container {
-    background: var(--primary-color);
-    border-radius: 10px;
-    backdrop-filter: blur(50px);
-    padding: 30px;
-    margin: 0 auto;
-    box-shadow: 0 0 10px black;
-    min-width: 300px;
-}
-
 .form-container {
+    min-width: 300px;
     margin: 10px;
     padding: 30px;
     /* position: relative; */
