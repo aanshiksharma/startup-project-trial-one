@@ -31,7 +31,7 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    background: url('/images/home.jpeg') no-repeat;
+    background: url('images/home.jpeg') no-repeat;
     background-size: cover;
     background-position: top;
     z-index: -1;
